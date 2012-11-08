@@ -26,6 +26,19 @@
 	<!-- End here -->
 	<script src="libs/backbone/backbone.js"></script>
 	<script src="libs/backbone/backbone.localStorage.js"></script>
+	<script src="js/models/loginmodel.js"></script>
+	<script src="js/views/loginview.js"></script>
+	<script src="js/controllers/default.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+				var router;
+				$(function() {
+
+					router = new DefaultRouter();
+					Backbone.history.start();
+					
+				});
+				
+	</script>
 </body>
 </html>
