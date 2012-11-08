@@ -4,7 +4,7 @@ var DefaultRouter = Backbone.Router.extend({
 		"":"loginPage",
 		"index":"loginPage"
 	},
-	initalize:function()
+	initialize:function()
 	{
 		this.loginModel = new LoginModel();
 		this.loginView = new LoginView({model:this.loginModel});
