@@ -1,4 +1,4 @@
-var DefaultRouter = Backbone.Router({
+var DefaultRouter = Backbone.Router.extend({
 	
 	routes:{
 		"":"loginPage",
