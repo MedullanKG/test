@@ -5,7 +5,7 @@ var LoginView = Backbone.View.extend({
 	},
 	initialize:function()
 	{
-		_.bindAll(this,"loginFunction","loginSuccess","loginFailure");
+		_.bindAll(this,"loginFunction","loginSuccess","loginFailure","render");
 		this.model.bind("change",this.render);
 	},
 	render:function()
