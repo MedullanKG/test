@@ -24,18 +24,18 @@
 	<script src="js/views/templates/login.js"></script>
 	<!-- End here -->
 	<script src="libs/backbone/backbone.js"></script>
-	<script src="libs/backbone/backbone.localStorage.js"></script>
 	<script src="js/models/loginmodel.js"></script>
 	<script src="js/views/loginview.js"></script>
 	<script src="js/controllers/default.js"></script>
 	<script type="text/javascript">
-				var router;
-				Zepto(function($){ 
+			var router;
+		    Zepto(function($){
+				console.log("LOADING ROUTER");
+		        router = new DefaultRouter();
+		        Backbone.history.start();
+		    
+		    })
 
-					router = new DefaultRouter();
-					Backbone.history.start();
-				
-				}) 
 				
 	</script>
 </body>
