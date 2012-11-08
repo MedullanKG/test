@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Insert title here</title>
+<link href="libs/css/bootstrap/bootstrap.css" rel="stylesheet" />
+<link href="libs/css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="span12"></div>
+		</div>
+	</div>
+
+	<script src="js/libs/zepto/zepto.js"></script>
+	<script src="js/libs/underscore/underscore.js"></script>
+	<script>
+		_.templateSettings = {
+			interpolate : /\{\{(.+?)\}\}/g
+		};
+	</script>
+	<script src="libs/js/backbone/backbone.js"></script>
+	<script src="libs/js/backbone/backbone.localStorage.js"></script>
+</body>
+</html>
