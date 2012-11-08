@@ -1,8 +1,8 @@
 var LoginView = Backbone.View.extend({
 	template:_.template(window.JST["login"]),
-	events:{
-			"click form .btn":"loginFunction"
-	},
+//	events:{
+//			"click form .btn":"loginFunction"
+//	},
 	initialize:function()
 	{
 		_.bindAll(this,"loginFunction","loginSuccess","loginFailure","render");

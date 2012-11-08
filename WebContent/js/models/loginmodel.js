@@ -7,7 +7,6 @@ var LoginModel = Backbone.Model.extend({
 	idAttribute: "username",
 	login:function(key, value, options)
 	{
-
 		      var attrs, current;
 
 		      if (_.isObject(key) || key == null) {
