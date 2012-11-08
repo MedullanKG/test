@@ -3,8 +3,8 @@
 <head>
 <meta charset="ISO-8859-1" />
 <title>Insert title here</title>
-<link href="libs/css/bootstrap/bootstrap.css" rel="stylesheet" />
-<link href="libs/css/bootstrap/bootstrap-responsive.css" rel="stylesheet" />
+<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="libs/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
@@ -14,14 +14,18 @@
 		</div>
 	</div>
 
-	<script src="js/libs/zepto/zepto.js"></script>
-	<script src="js/libs/underscore/underscore.js"></script>
+	<script src="libs/zepto/zepto.js"></script>
+	<script src="libs/underscore/underscore.js"></script>
 	<script>
 		_.templateSettings = {
 			interpolate : /\{\{(.+?)\}\}/g
 		};
 	</script>
-	<script src="libs/js/backbone/backbone.js"></script>
-	<script src="libs/js/backbone/backbone.localStorage.js"></script>
+	<!-- Template externalize script goes here -->
+	<script src="js/views/templates/login.js"></script>
+	<!-- End here -->
+	<script src="libs/backbone/backbone.js"></script>
+	<script src="libs/backbone/backbone.localStorage.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
